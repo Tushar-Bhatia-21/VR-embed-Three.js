@@ -1,0 +1,38 @@
+
+.overlay {
+    position: absolute;
+    bottom: 1em;
+    padding: 3em;
+    font-family: 'Bebas Neue';
+    pointer-events: none;
+    color: rgb(133, 180, 227);
+
+    h1 {
+        position:relative;
+        font-size: 3rem;
+        top:1em;
+        margin: 0;
+    }
+
+    p {
+        font-family: 'Poppins';
+        font-size: .9rem;
+        margin: 0;
+        width: 50%;
+    }
+}
+
+#container::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    
+    z-index: 0;
+    pointer-events: none;
+}
+.inner {
+    position: relative;
+    z-index: 10;
+    pointer-events: none;
+}
